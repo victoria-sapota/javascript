@@ -1,11 +1,11 @@
-//Create list of 2* numbers from table. Use 'for of' to make iteration to all elements in the table
+//Create list of 2* numbers from array. Use 'for of' to make iteration to all elements in the array
 
 const numbers = [1, 2, 3, 4, 5]
 for (const number of numbers) {
     console.log(number * 2)
 }
 
-//Create table [5, 8, 10, 23, 48, 60], divide it by 5 and display. Show even and odd numbers
+//Create array [5, 8, 10, 23, 48, 60], divide it by 5 and display. Show even and odd numbers
 
 let numbs = [5, 8, 10, 23, 48, 60]
 for (const numb of numbs) {
