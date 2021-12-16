@@ -6,7 +6,7 @@ for (let i = 0; i < animals.length; i ++) {
     console.log(animals[i])
 }
 
-//Create table with cities. Display all with upper case
+//Create array with name of cities. Display all with upper case
 
 cities = ['New York', 'Chicago', 'Pensylwania', 'Philadelphia', 'Los Angeles']
 
