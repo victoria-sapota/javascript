@@ -16,14 +16,14 @@ const abc = ['a', 'b', 'c']
 const newAbc = numbers.concat(abc)
 console.log(newAbc)
 
-//connecting with '...'
+//connecting with concat using
 const drinks = ['pepsi', 'coffee', 'water']
 const meals = ['chicken', 'burger', 'apple']
 
 const menu = meals.concat(drinks)
 console.log(...menu)
 
-//or
+//or with '...' using
 
 const menu2 = [...meals, ...drinks]
 console.log(menu2)
