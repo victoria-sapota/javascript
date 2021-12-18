@@ -44,3 +44,47 @@ if (newArray % 2 == 0) {
 }
 
 newArray.forEach(even)
+
+/*Create array = 'blue'. Add additional kolors: at the end and beggining of array (with uppercase using). 
+Display colors with first letter uppercase, with using methods to string  */
+
+let colors = ['blue']
+
+colors.unshift('yellow')
+colors.push('green')
+
+for (let i = 0; i < colors.length; i++)  {
+    console.log(`Mój ulubiony kolor to: ${colors[i].toUpperCase()}`)
+}
+
+console.log(colors)
+
+
+for (let i = 0; i < colors.length; i++)  {
+    let char = colors[i].charAt(0).toUpperCase()
+    let rest = colors[i].slice(1)
+    let newColors = char.concat(rest)
+    console.log(`Mój ulubiony kolor to: ${newColors}`)
+}
+
+/*Create string = 'Audi, Mercedes, BMW, Nissan, Dodge'. With method to strings change it to an array
+Check the array's lenght > 3 and show info. If the array include any car brand - add any at the beggining
+to array. If array hasn't this value - delete last value in array*/
+const cars = 'Audi, Mercedes, BMW, Nissan, Dodge'
+let carsString = (cars.split(', '))
+
+console.log(`carsString: ${carsString}`)
+
+if(carsString.length > 3) {
+    console.log('It is ok')
+} else {
+    console.log('It is not OK')
+}
+
+if (carsString.includes('Audi')) {
+    carsString.unshift('Mazda')
+    console.log(carsString)
+} else {
+    carsString.pop()
+    console.log(carsString)
+}
